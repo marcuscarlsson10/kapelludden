@@ -1,0 +1,293 @@
+/**
+ * Theme Name:     Kapelludden
+ * Author:         BorgholmsCampingar
+ * Template:       twentytwentyfour
+ * Text Domain:	   kapelludden
+ * Description:    Twenty Twenty-Four is designed to be flexible, versatile and applicable to any website. Its collection of templates and patterns tailor to different needs, such as presenting a business, blogging and writing or showcasing work. A multitude of possibilities open up with just a few adjustments to color and typography. Twenty Twenty-Four comes with style variations and full page designs to help speed up the site building process, is fully compatible with the site editor, and takes advantage of new design tools introduced in WordPress 6.4.
+ */
+
+<style>
+
+* {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 1.2em;
+}
+
+img {
+    border-radius: 5px;
+    transition: .3s ease all;
+}
+
+body {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 1.2em
+    color: rgba(0,0,0,.75);
+}
+
+a{
+    text-decoration: underline;
+    cursor:pointer;
+}
+
+p {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 1.3em;
+}
+
+
+h2, h3, h4 {
+    font-weight: 600;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    color: #000;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 60px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+
+header {
+    background-color: transparent;
+    top:0;
+    left: 0;
+    z-index: 9999;
+	position: absolute;
+	width: 100% !important;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+footer {
+	background-color: #1b2c4c;
+}
+
+:where(.wp-site-blocks) > * {
+    margin-block-start: 0rem;
+    margin-block-end: 0;
+}
+
+.image-box--link {
+    text-align: left;
+    display: inline-flex;
+    align-items: flex-start;
+    padding: 0 20px 20px 20px;
+    margin: 10px 0 0 5px;
+    font-size: 1.2em;
+}
+
+.heading-pil {
+    color: white;
+    font-size: 40px;
+}
+
+.heading-pil:before {
+    
+    content: "";
+    display: block;
+    transform: translateY(65px); /* Ingen horisontell förskjutning från början */
+    transition: transform 0.3s, opacity 0.3s; /* Skapar smidig övergångseffekt */
+    color: #f18620;
+    border-bottom: 2px solid #f18620;
+    max-width: 330px;
+    transition: transform 0.3s, opacity 0.3s; /* Skapar smidig övergångseffekt */
+
+}
+
+.heading-pil:hover::before {
+    
+   transform: translateY(70px);
+
+}
+
+.h3-pil img {
+    
+    content: ""; /* Pilen efter rubriken */
+    display: inline-block; /* Gör det möjligt att använda vertikal justering */
+    margin-left: 50px; /* Justera avståndet mellan rubriken och pilen */
+    transform: translateX(0); /* Ingen horisontell förskjutning från början */
+    transition: transform 0.3s, opacity 0.3s; /* Skapar smidig övergångseffekt */
+    color: #f18620;
+    width: 87px;
+
+}
+
+.h3-pil:hover img {
+    
+   transform: translateX(10px);
+
+}
+
+
+.wp-block-navigation .wp-block-navigation-item__content  {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.wp-block-navigation .wp-block-page-list, .wp-block-navigation__container, .wp-block-navigation__responsive-close, .wp-block-navigation__responsive-container, .wp-block-navigation__responsive-container-content, .wp-block-navigation__responsive-dialog {
+    gap: 3em;
+}
+
+.zoom {
+    transform: scale(1);
+}
+
+.zoom:hover .wp-block-getwid-section__background {
+
+    transform: scale(103%);
+    transition: .3s ease all;
+}
+
+.wp-block-getwid-section__background, .wp-block-getwid-section__background-holder {
+
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .3s ease all;;
+}
+
+.wp-block-getwid-banner__title {
+    font-size: 1.5em;
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+.wp-block-getwid-banner__title+.wp-block-getwid-banner__text {
+    margin-top: 0.2em;
+}
+
+.cta-button {
+    padding: 12px 20px 6px 20px !important;
+    background-color: #90b9cd !important;
+    color: #000;
+    border-radius: 5px;;
+}
+
+.i-b{
+    display: inline-block !important; /* Gör det möjligt att använda vertikal justering */
+}
+
+.d-b {
+    display: block !important;
+}
+
+.i-f{
+    display: inline-flex !important; /* Gör det möjligt att använda vertikal justering */
+    align-items: center;
+}
+
+.j-c {
+    justify-content: center;
+}
+
+.j-c {
+    justify-content: center;
+}
+
+.f-c {
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 600px) {
+    .hide-on-mobile {
+        display: none !important;
+    }
+}
+
+.width100 {
+    width:100%;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.minus-margin-left{
+    margin: -50px !important;
+}
+
+.orange-fill {
+    fill: #f18620;
+}
+
+.align--arrow {
+    margin: 0 0 0 0px !important;
+    justify-content: flex-end;
+}
+
+.trigger {
+    transform: translateX(0px);
+    transition: .3s ease all;
+}
+
+.trigger:hover img {
+    transform: translateX(10px);
+   
+}
+
+.top {
+    z-index: 1;
+}
+
+.b-r {
+    border-radius: 2px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  /*.b-r {
+    flex-basis: 50%;
+    flex-direction: column;
+    flex-wrap:wrap
+  }*/
+  
+  .wp-block-column {
+    flex: 1;
+    flex-grow: 0;
+    flex-basis: 50%;
+    flex-direction: column;
+
+      
+  }
+  
+}
+
+.wp-block-site-logo img {
+    height: 125px;
+    max-width: 100%;
+}
+
+.wp-block-column {
+    border-radius: 2px;
+}
+
+.wp-block-buttons{
+    text-decoration: none;
+    transform: translateY(0);
+    transition: .3s ease all;
+}
+
+.wp-block-buttons:hover{
+    text-decoration: none;
+    transform: translateY(10px);
+    transition: .3s ease all;
+}
+
+.is-menu-open {
+    background-color: #1e446e !important;
+}
+
+.has-animation-style4 .wp-block-getwid-banner__image, .has-animation-style4 .wp-block-getwid-banner__video {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.wp-block-getwid-banner__link:hover .wp-block-getwid-banner__image, .has-animation-style4 .wp-block-getwid-banner__video {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.wp-block-table.is-style-stripes tbody tr:nth-child(odd) {
+    background-color: #7da2b5;
+}
+
+</style>
